@@ -40,8 +40,8 @@ while True:
     default_path = "."
 
     # Use the first external disk found, or default to the local drive
-    if disks:
-        external_disk_path = disks[1]
+    if len(disks) > 1:
+        external_disk_path = disks[-1]
     else:
         external_disk_path = default_path
 
